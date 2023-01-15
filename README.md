@@ -1,42 +1,22 @@
-[![View on Medium](https://img.shields.io/badge/Medium-View%20on%20Medium-blue?logo=medium)](https://towardsdatascience.com/how-to-structure-a-data-science-project-for-readability-and-transparency-360c6716800)
+[![View on Medium](https://img.shields.io/badge/Medium-View%20on%20Medium-blue?logo=medium)](https://pydt.medium.com/come%C3%A7ando-seu-projeto-de-data-science-f2c99ff0becc)
 
-# Data Science Cookie Cutter for Prefect
+# Ciência de Dados Cookie Cutter
 
-## Why Should You Use This Template?
-This template is the result of my years refining the best way to structure a data science project so that it is reproducible and maintainable.
+Repositório com estrutura padrão para projetos de Ciência de Dados. O template original foi desenvolvido pela Cientista de Dados Khuyen Tran, que frequentemente compartilha artigos muito interessantes e úteis para Análise e Ciência de Dados de todas as senioridades.
 
-This template allows you to:
+[![View on Medium](https://img.shields.io/badge/Medium-View%20on%20Medium-blue?logo=medium)](https://khuyentran1476.medium.com/)
 
-:white_check_mark: Create a readable structure for your  project
-
-:white_check_mark: Automatically run tests when committing your code
-
-:white_check_mark: Enforce type hints at runtime 
-
-:white_check_mark: Check issues in your code before committing
-
-:white_check_mark: Efficiently manage the dependencies in your project
-
-
-:white_check_mark: Create short and readable commands for repeatable tasks
-
-:white_check_mark: Only rerun the components of a pipeline whose dependencies change
-
-:white_check_mark:	Automatically document your code
-
-:white_check_mark:	Observe and create all runs from the UI
-
-:white_check_mark: Seamlessly add scheduling, notifications, caching, and retries to your code
+---
 
 ## Tools used in this project
-* [Poetry](https://python-poetry.org/): Dependency management - [article](https://towardsdatascience.com/how-to-effortlessly-publish-your-python-package-to-pypi-using-poetry-44b305362f9f)
-* [Prefect](https://www.prefect.io/): Orchestrate and observe your data pipeline - [article](https://medium.com/the-prefect-blog/orchestrate-your-data-science-project-with-prefect-2-0-4118418fd7ce?sk=552f3e60344175768dabbbf033776ce7)
-* [Pydantic](https://docs.pydantic.dev/): Data validation using Python type annotations - [article](https://towardsdatascience.com/build-a-full-stack-ml-application-with-pydantic-and-prefect-915f00fe0c62?sk=b1f8c5cb53a6a9d7f48d66fa778e9cf0)
-* [pre-commit plugins](https://pre-commit.com/): Automate code reviewing formatting  - [article](https://towardsdatascience.com/4-pre-commit-plugins-to-automate-code-reviewing-and-formatting-in-python-c80c6d2e9f5?sk=2388804fb174d667ee5b680be22b8b1f)
-* Makefile: Create short and readable commands for repeatable tasks - [article](https://the-turing-way.netlify.app/reproducible-research/make/make-examples.html)
-* [GitHub Actions](https://docs.github.com/en/actions): Automate your workflows, making it faster to build, test, and deploy your code - [article](https://pub.towardsai.net/github-actions-in-mlops-automatically-check-and-deploy-your-ml-model-9a281d7f3c84?sk=d258c20a7ff7a1db44327c27d3f36efb)
-* [pdoc](https://github.com/pdoc3/pdoc): Automatically create an API documentation for your project
-## Project structure
+* [Poetry](https://python-poetry.org/docs/master/#installing-with-the-official-installer): Gerenciamento de dependências e pacotes 
+* [DVC](https://dvc.org/): Versionamento de Dados
+* [Pydantic](https://docs.pydantic.dev/): Validação de dados
+* [Plugins pré-commit](https://pre-commit.com/): Automação de formatação do código pré-commit
+* [Makefile](https://the-turing-way.netlify.app/reproducible-research/make/make-examples.html): Criação de funções para rotinas de comando no terminal
+* [GitHub Actions](https://docs.github.com/en/actions): Automação de fluxo para build, teste e deploy de código (CI/CD)
+* [pdoc](https://github.com/pdoc3/pdoc): Automação de criação de documentação para API do projeto
+## Estrutura de Projetos
 ```bash
 .
 ├── data            
@@ -63,19 +43,16 @@ This template allows you to:
     ├── test_process.py             # test functions for process.py
     └── test_train_model.py         # test functions for train_model.py
 ```
+---
 
+## Como usar o template
 
-## How to use this project
-
-Install Cookiecutter:
+Instalar Cookiecutter:
 ```bash
 pip install cookiecutter
 ```
 
-Create a project based on the template:
+Criando um projeto:
 ```bash
-cookiecutter https://github.com/khuyentran1401/data-science-template --checkout prefect
+cookiecutter https://github.com/garcialn/dt_sci-template
 ```
-
-Find detailed explanation of this template [here](https://towardsdatascience.com/how-to-structure-a-data-science-project-for-readability-and-transparency-360c6716800).
-
