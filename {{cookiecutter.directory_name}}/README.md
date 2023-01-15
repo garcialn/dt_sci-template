@@ -1,8 +1,6 @@
-# Apague esse arquivo README.md e utilize apenas o arquivo que vai ser gerado pelo github quando criar um repositório para seu projeto.
----
+# Quick Start
 
-## Quick Start
----
+
 ### Set up do ambiente:
 1. Instalar [Poetry](https://python-poetry.org/docs/#installation)
 2. Preparar o ambiente virtual
@@ -47,3 +45,5 @@ make docs_save
 ---
 ### Rodar os testes quando subir um PR (CI/CD):
 ![](images/github_actions.png)
+
+###### Apague esse arquivo README.md e utilize apenas o arquivo que vai ser gerado pelo github quando criar um repositório para seu projeto.
