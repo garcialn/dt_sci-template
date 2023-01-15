@@ -20,28 +20,28 @@ Repositório com estrutura padrão para projetos de Ciência de Dados. O templat
 ```bash
 .
 ├── data            
-│   ├── final                       # data after training the model
-│   ├── processed                   # data after processing
-│   ├── raw                         # raw data
-├── docs                            # documentation for your project
-├── .flake8                         # configuration for flake8 - a Python formatter tool
-├── .gitignore                      # ignore files that cannot commit to Git
-├── Makefile                        # store useful commands to set up the environment
-├── models                          # store models
-├── notebooks                       # store notebooks
-├── .pre-commit-config.yaml         # configurations for pre-commit
-├── pyproject.toml                  # dependencies for poetry
-├── README.md                       # describe your project
-├── src                             # store source code
-│   ├── __init__.py                 # make src a Python module
-│   ├── config.py                   # store configs 
-│   ├── process.py                  # process data before training model
-│   ├── run_notebook.py             # run notebook
-│   └── train_model.py              # train model
-└── tests                           # store tests
-    ├── __init__.py                 # make tests a Python module 
-    ├── test_process.py             # test functions for process.py
-    └── test_train_model.py         # test functions for train_model.py
+│   ├── final                       # Dados após treino do modelo
+│   ├── processed                   # Dados processados (em caso de uso local)
+│   ├── raw                         # Dados brutos (em caso de uso local)
+├── docs                            # Documentação do projeto
+├── .flake8                         # Configuração para formatação flake8
+├── .gitignore                      # Arquivos/Diretórios a serem ignorados pelo git
+├── Makefile                        # Arquivos das rotinas criadas para usar no terminal
+├── models                          # Modelos do projeto
+├── notebooks                       # Notebooks do projeto
+├── .pre-commit-config.yaml         # Configurações pré-commit
+├── pyproject.toml                  # Dependencias do Poetry
+├── README.md                       # Descrição do Projeto
+├── src                             # Código fonte do projeto
+│   ├── __init__.py                 # Transformar o diretório em Módulo Python
+│   ├── config.py                   # Configurações do código
+│   ├── process.py                  # Código de processamento dos dados para treinamento do(s) modelo(s)
+│   ├── run_notebook.py             # Rodar notebook
+│   └── train_model.py              # Modelo para treinamento
+└── tests                           # Diretório de testes
+    ├── __init__.py                 # Transformar o diretório em Módulo Python
+    ├── test_process.py             # Funções para teste de process.py
+    └── test_train_model.py         # Funções para teste de train_model.py
 ```
 ---
 
