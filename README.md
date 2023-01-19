@@ -19,6 +19,14 @@ Repositório com estrutura padrão para projetos de Ciência de Dados. O templat
 ## Estrutura de Projetos
 ```bash
 .
+├── config
+│   ├── model
+│       ├── model1.yaml
+│       ├── model2.yaml
+│   ├── process
+│       ├── process1.yaml
+│       ├── process2.yaml
+│   ├── main.yaml
 ├── data            
 │   ├── final                       # Dados após treino do modelo
 │   ├── processed                   # Dados processados (em caso de uso local)
