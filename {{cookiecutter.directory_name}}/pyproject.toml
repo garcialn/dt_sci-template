@@ -6,7 +6,7 @@ license = "MIT"
 authors = ["{{cookiecutter.author_name}}"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9.1"
 pdoc3 = "^0.10.0"
 notebook = "^6.4.10"
 prefect = "^2.7.6"
@@ -17,7 +17,7 @@ interrogate = "^1.5.0"
 hydra-core = "^1.1.1"
 joblib = "^1.2.0"
 dagshub = "^0.1.8"
-mlflow = "^1.30.0"
+mlflow = "^2.1.1"
 bentoml = "^1.0.7"
 dvc = "^2.31.0"
 duckdb = "^0.6.0"
